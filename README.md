@@ -14,15 +14,20 @@ If you'd like to try AltoroJ but want to skip all of the cool software developme
 
 
 # Prereqiusites
-AltoroJ has been developed using Eclipse and designed to run on Tomcat 7, but since it's a relatively simple J2EE app, it should be pretty easy to port it to a different J2EE IDE or another J2EE web application server. Here are out-of-the-box requirements:
+This repository has been copied from https://github.com/HCL-TECH-SOFTWARE/AltoroJ and the 3.2 branch.  The project has been converted to Maven and set to run within IntelliJ using JDK 17 and Tomcat 9.0.58.
 
-- Eclipse 4.6 or newer recommended (requires Java 8)
-- Tomcat 7.x
-- Gradle 3.0 to build from command line
-- Gradle's Buildship Eclipse plug-in to automatically download required 3rd party libraries and run AltoroJ inside Eclipse
--- Easiest way to install Buildship is from Eclipse Marketplace (inside Eclipse, go to Help -> Eclipse Marketplace)
+1. Install Tomcat 9.0.58
+2. Ensure you are using the IntelliJ Ultimate Edition.  Free academic licenses are available.
+3. Clone this repository
+4. Open this project (the folder) within IntelliJ Ultimate Edition
+5. Select "Run -> Edit Configurations".  Click the "Add new ..." link
+6. Select Tomcat Server - local.
+7. If you have not already configured Tomcat within IntelliJ, click the "Configure ..." button next to Application Server.  Add a new server, entering the root directory of your Tomcat installation.  Click "ok" to close the dialo
+8. Click on the "Deployment" tab.  Then the "add symbol" and then "artifact ...".  Select "fintech512-altoroj:war exploded". At the bottom of the dialog, change the "Application Context" to "altoromutual"
+9. If you desire, change the name of the run configuration to something more meaningful than "Tomcat 9.0.58"
+10.  Click "Ok" to close the configuration dialog and save your changes.
 
-[Read more about importing AltoroJ into Eclipse from GitHub here](https://github.com/AppSecDev/AltoroJ/blob/master/Importing%20AltoroJ%20into%20Eclipse%20from%20GitHub.md)
+You should now be able to run the application.  Your browser should open the application's homepage.
 
 # AltoroJ credentials
 Main usernames and passwords for AltoroJ are as follows:
@@ -59,4 +64,3 @@ OR modify Tomcat’s startup to include –Duser.home=“<new_path>” in Java a
 #License
 
 All files found in this project are licensed under the [Apache License 2.0](https://github.com/AppSecDev/AltoroJ/blob/master/LICENSE).
-
