@@ -16,7 +16,7 @@ If you'd like to try AltoroJ but want to skip all of the cool software developme
 # Prereqiusites
 This repository has been copied from https://github.com/HCL-TECH-SOFTWARE/AltoroJ and the 3.2 branch.  The project has been converted to Maven and set to run within IntelliJ using JDK 17 and Tomcat 9.0.58.
 
-1. Install Tomcat 9.0.58
+1. Install Tomcat 9.0.58  (This is simply download the zip or tar file and then expanding the contents on your filesystem.)
 2. Ensure you are using the IntelliJ Ultimate Edition.  Free academic licenses are available.
 3. Clone this repository
 4. Open this project (the folder) within IntelliJ Ultimate Edition
