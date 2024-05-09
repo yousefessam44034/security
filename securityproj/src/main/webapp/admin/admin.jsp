@@ -8,7 +8,7 @@ vulnerabilities that were created expressly for demonstrating the functionality 
 application security testing tools. These vulnerabilities may present risks to the
 technical environment in which the application is installed. You must delete and
 uninstall this demonstration application upon completion of the demonstration for
-which it is intended. 
+which it is intended.
 
 IBM DISCLAIMS ALL LIABILITY OF ANY KIND RESULTING FROM YOUR USE OF THE APPLICATION
 OR YOUR FAILURE TO DELETE THE APPLICATION FROM YOUR ENVIRONMENT UPON COMPLETION OF
@@ -19,20 +19,20 @@ ENVIRONMENT. YOU ACKNOWLEDGE AND ACCEPT ALL RISKS ASSOCIATED WITH THE USE OF THE
 IBM AltoroJ
 (c) Copyright IBM Corp. 2008, 2013 All Rights Reserved.
 */
-%>    
+%>
 <jsp:include page="/header.jspf"/>
 
 <div id="wrapper" style="width: 99%;">
 	<jsp:include page="/bank/membertoc.jspf"/>
 	<td valign="top" colspan="3" class="bb">
 		<%@page import="com.ibm.security.appscan.altoromutual.util.ServletUtil"%>
-		
+
 		<%
 		String[] users = ServletUtil.getBankUsers();
-		
+
 		%>
 		<script language="javascript">
-		
+
 		function confirmpass(myform)
 		{
 		  if (myform.password1.value.length && (myform.password1.value==myform.password2.value))
@@ -47,24 +47,24 @@ IBM AltoroJ
 		    alert ("Passwords do not match");
 		    return false;
 		  }
-		
+
 		}
 		</script>
-		
+
 		<!-- Be careful what you change.  All changes are made directly to AltoroJ database. -->
 		<div class="fl" style="width: 99%;">
 		<p><span style="color:#FF0066;font-size:12pt;font-weight:bold;">
 		<%
 		java.lang.String error = (String)request.getSession().getAttribute("message");
-		
+
 		if (error != null && error.trim().length() > 0){
 			out.print(error);
 		}
 		%>
 		</span></p>
-		
+
 		<h1>Edit User Information</h1>
-		
+
 		<table width="100%" border="0">
 		<!-- action="addAccount" -->
 		<form id="addAccount" name="addAccount" action="<%=ServletUtil.isAppPropertyTrue("enableAdminFunctions")?"addAccount":"" %>" method="post">
@@ -101,7 +101,7 @@ IBM AltoroJ
 		    <td><input type="submit" value="Add Account"></td>
 		  </tr>
 		  </form>
- 
+
  		<!-- action="changePassword" -->
 		  <form id="changePass" name="changePass" action="<%=ServletUtil.getAppProperty("enableAdminFunctions").equalsIgnoreCase("true")?"changePass":"" %>" method="post" onsubmit="return confirmpass(this);">
 		  <tr>
@@ -139,7 +139,7 @@ IBM AltoroJ
 		  </tr>
 		  </form>
 		  <!-- action="addUser" -->
-		  <form method="post" name="addUser" action="<%=ServletUtil.getAppProperty("enableAdminFunctions").equalsIgnoreCase("true")?"addUser":"" %>" id="addUser" onsubmit="return confirmpass(this);">		  
+		  <form method="post" name="addUser" action="<%=ServletUtil.getAppProperty("enableAdminFunctions").equalsIgnoreCase("true")?"addUser":"" %>" id="addUser" onsubmit="return confirmpass(this);">
 		  <tr>
 		    <td colspan="4"><h2><br><br>Add an new user</h2></td>
 		  </tr>
@@ -184,10 +184,10 @@ IBM AltoroJ
 		    </td>
 		  </tr>
 		 </form>
- 		 
+
 		</table>
 		</div>
     </td>
 </div>
 
-<jsp:include page="/footer.jspf"/>		
+<jsp:include page="/footer.jspf"/>

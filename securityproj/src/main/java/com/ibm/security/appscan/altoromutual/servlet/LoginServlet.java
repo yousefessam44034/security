@@ -4,7 +4,7 @@ vulnerabilities that were created expressly for demonstrating the functionality 
 application security testing tools. These vulnerabilities may present risks to the
 technical environment in which the application is installed. You must delete and
 uninstall this demonstration application upon completion of the demonstration for
-which it is intended. 
+which it is intended.
 
 IBM DISCLAIMS ALL LIABILITY OF ANY KIND RESULTING FROM YOUR USE OF THE APPLICATION
 OR YOUR FAILURE TO DELETE THE APPLICATION FROM YOUR ENVIRONMENT UPON COMPLETION OF
@@ -18,6 +18,7 @@ IBM AltoroJ
 package com.ibm.security.appscan.altoromutual.servlet;
 
 import java.io.IOException;
+import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -37,7 +38,7 @@ import com.ibm.security.appscan.altoromutual.util.ServletUtil;
  */
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -58,27 +59,33 @@ public class LoginServlet extends HttpServlet {
 		} finally {
 			response.sendRedirect("index.jsp");
 		}
-		
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//log in
 		// Create session if there isn't one:
 		HttpSession session = request.getSession(true);
+		if (session != null) {
+			session.invalidate();
+		}
+
+		session = request.getSession(true);
+		String csrfToken = UUID.randomUUID().toString();  // Generate CSRF Token
+		session.setAttribute("CSRF_TOKEN", csrfToken);  // Store CSRF Token in session
 
 		String username = null;
-		
+
 		try {
 			username = request.getParameter("uid");
 			if (username != null)
 				username = username.trim().toLowerCase();
-			
+
 			String password = request.getParameter("passw");
-			password = password.trim().toLowerCase(); //in real life the password usually is case sensitive and this cast would not be done
-			
+			password = password.trim().toLowerCase();
+
 			if (!DBUtil.isValidUser(username, password)){
 				Log4AltoroJ.getInstance().logError("Login failed >>> User: " +username + " >>> Password: " + password);
 				throw new Exception("Login Failed: We're sorry, but this username or password was not found in our system. Please try again.");
@@ -89,19 +96,15 @@ public class LoginServlet extends HttpServlet {
 			return;
 		}
 
-		//Handle the cookie using ServletUtil.establishSession(String)
-		try{
-			Cookie accountCookie = ServletUtil.establishSession(username,session);
+		// Handle the cookie using ServletUtil.establishSession(String)
+		try {
+			Cookie accountCookie = ServletUtil.establishSession(username, session);
 			response.addCookie(accountCookie);
-			response.sendRedirect(request.getContextPath()+"/bank/main.jsp");
-			}
-		catch (Exception ex){
+			response.sendRedirect(request.getContextPath() + "/bank/main.jsp");
+		} catch (Exception ex) {
 			ex.printStackTrace();
 			response.sendError(500);
 		}
-			
-		
-		return;
 	}
 
 }

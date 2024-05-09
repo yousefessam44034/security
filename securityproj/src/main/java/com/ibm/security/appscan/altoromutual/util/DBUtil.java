@@ -18,12 +18,7 @@ IBM AltoroJ
 
 package com.ibm.security.appscan.altoromutual.util;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.util.ArrayList;
 
 import javax.naming.Context;
@@ -209,30 +204,29 @@ public class DBUtil {
 	 * @return true if valid user, false otherwise
 	 * @throws SQLException
 	 */
-	public static boolean isValidUser(String user, String password) throws SQLException{
+	public static boolean isValidUser(String user, String password) throws SQLException {
 		if (user == null || password == null || user.trim().length() == 0 || password.trim().length() == 0)
-			return false; 
-		
+			return false;
 		Connection connection = getConnection();
-		Statement statement = connection.createStatement();
-		
-		ResultSet resultSet =statement.executeQuery("SELECT COUNT(*)FROM PEOPLE WHERE USER_ID = '"+ user +"' AND PASSWORD='" + password + "'"); /* BAD - user input should always be sanitized */
-		
-		if (resultSet.next()){
-			
-				if (resultSet.getInt(1) > 0)
-					return true;
+		PreparedStatement stmt = connection.prepareStatement("SELECT COUNT(*) FROM PEOPLE WHERE USER_ID = ? AND PASSWORD = ?");
+		stmt.setString(1, user);
+		stmt.setString(2, password);
+		ResultSet resultSet = stmt.executeQuery();
+
+		if (resultSet.next()) {
+			if (resultSet.getInt(1) > 0)
+				return true;
 		}
 		return false;
 	}
-	
 
-	/**
-	 * Get user information
-	 * @param username
-	 * @return user information
-	 * @throws SQLException
-	 */
+
+		/**
+         * Get user information
+         * @param username
+         * @return user information
+         * @throws SQLException
+         */
 	public static User getUserInfo(String username) throws SQLException{
 		if (username == null || username.trim().length() == 0)
 			return null; 

@@ -81,7 +81,7 @@ IBM AltoroJ
 			      	document.login.passw.focus();
 			    }
 			}
-			
+
 			function confirminput(myform) {
 			    if (myform.uid.value.length && myform.passw.value.length) {
 			      return (true);

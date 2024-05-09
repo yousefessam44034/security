@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="fintech512-altoroj:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="479c8b22-0590-46e0-bb8a-face4a4292e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/Log4AltoroJ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/AccountAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/AdminAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/AltoroAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/FeedbackAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/LoginAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/LogoutAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/api/TransferAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/filter/AdminFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/filter/ApiAuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/listener/StartupListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/model/Feedback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/model/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/AccountViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/AdminLoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/AdminServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/CCApplyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/FeedbackServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/RedirectServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/SubscribeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/SurveyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/servlet/TransferServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/util/DBUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/util/OperationsUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibm/security/appscan/altoromutual/util/ServletUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/app.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ibm-web-ext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/init.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/AltoroJNotices.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/ApacheLicense.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/feedbackReview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/apply.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/applysuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/balance.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/customize.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/membertoc.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/queryxpath.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/stocks.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/transaction.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bank/transfer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/disclaimer.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/feedbacksuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/high_yield_investments.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/adobe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/altoro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_cards.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_deposit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_insurance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_lending.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_other.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/b_retirement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/cancel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gradient.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/header_pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/home1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/home2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/home3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/inside7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_cards.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_checking.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_deposit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_investments.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_loans.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/p_other.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/pf_lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/notfound.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pr/Docs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pr/Draft.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pr/Q3_earnings.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pr/communityannualreport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/retirement.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_cards.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_deposit.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_insurance.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_lending.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_other.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/business_retirement.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/default.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_about.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_benefits.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_careers.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_community.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_contact.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_executives.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_internships.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_investor.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_jobs.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_locations.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_press.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_trainee.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/inside_volunteering.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061019.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061023.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061024.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061025.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061026.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/jobs/20061027.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_cards.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_checking.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_deposit.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_investments.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_loans.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/personal_other.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060413.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060518.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060720.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060817.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060921.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20060928.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20061005.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/pr/20061109.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/privacy.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/security.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/status_check.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/subscribe.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/subscribe.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/survey_questions.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/css/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/css/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-700.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-700.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/fonts/droid-sans-v6-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/explorer_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/logo_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/pet_store_api.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/images/wordnik_api.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lang/translator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/backbone-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/handlebars-2.0.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/highlight.7.3.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/jquery-1.8.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/jquery.ba-bbq.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/jquery.slideto.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/jquery.wiggle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/marked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/swagger-oauth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/underscore-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/lib/underscore-min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/o2c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/oauth2-redirect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/properties.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui-standalone-preset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui-standalone-preset.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger/swagger-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/toc.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/EasyStock.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/expressInstall.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/serverStatusCheck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/serverStatusCheckService.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/swfobjectLicense.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/util/vulnerable.swf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2gF165zG1UN5dRWSRs0dWtRF4l5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Unnamed.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/youse/Desktop/altorojnew/securityproj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="fintech512-altoroj:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/fintech512_altoroj_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="81540730-fc03-4305-a2f6-640af83b6224" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50195" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="fintech512-altoroj:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="479c8b22-0590-46e0-bb8a-face4a4292e6" name="Changes" comment="" />
+      <created>1715278332642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715278332642</updated>
+      <workItem from="1715278334420" duration="15248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

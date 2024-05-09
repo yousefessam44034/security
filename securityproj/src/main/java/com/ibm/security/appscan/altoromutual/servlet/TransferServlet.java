@@ -47,24 +47,31 @@ public class TransferServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		
-		if(!ServletUtil.isLoggedin(request)){
+		if (!ServletUtil.isLoggedin(request)) {
 			response.sendRedirect("login.jsp");
-			return ;
+			return;
 		}
+
+		// CSRF Token verification
+		String sessionToken = (String) request.getSession().getAttribute("CSRF_TOKEN");
+		String requestToken = request.getParameter("csrfToken");
+
+		if (sessionToken == null || !sessionToken.equals(requestToken)) {
+			response.sendError(HttpServletResponse.SC_FORBIDDEN, "CSRF token does not match.");
+			return;
+		}
+
 		String accountIdString = request.getParameter("fromAccount");
 		long creditActId = Long.parseLong(request.getParameter("toAccount"));
 		double amount = Double.valueOf(request.getParameter("transferAmount"));
-		
-		
-		String message = OperationsUtil.doServletTransfer(request,creditActId,accountIdString,amount);
-		
+
+		String message = OperationsUtil.doServletTransfer(request, creditActId, accountIdString, amount);
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher("transfer.jsp");
 		request.setAttribute("message", message);
-		dispatcher.forward(request, response);	
+		dispatcher.forward(request, response);
 	}
 
 }
